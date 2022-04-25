@@ -2,8 +2,9 @@
 //3, 5 -> 243 (3⁵)
 //2, 4 -> 16
 
+using System;
 Console.Clear();
-System.Console.WriteLine();
+
 
 Console.Write("Введите число А: ");
 int num = Convert.ToInt32(Console.ReadLine());
@@ -20,4 +21,4 @@ while (count < exponent)
     count++;
 }
 
-System.Console.WriteLine($"{num}, {exponent} -> {result}");
+Console.WriteLine($"{num}, {exponent} -> {result}");
