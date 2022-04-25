@@ -2,23 +2,16 @@
 
 using System;
 Console.Clear();
-
-int N = 8;
+Console.Write("Введите длину массива: ");
+int N = int.Parse(Console.ReadLine());
+Console.WriteLine(String.Join(" ", SetArray(N)));
 
 int[] SetArray(int x)
 {
     int[] arr = new int[x];
     for (int i = 0; i < x; i++)
     {
-        arr[i] = new Random().Next(1, 100);
+        arr[i] = new Random().Next(100);
     }
     return arr;
 }
-
-void PrintArray(int[] array)
-{
-    for (int i = 0; i < array.Length; i++)
-        System.Console.Write($"{array[i]} ");
-}
-
-PrintArray(SetArray(N));
