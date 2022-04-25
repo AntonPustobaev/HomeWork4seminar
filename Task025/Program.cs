@@ -14,7 +14,7 @@ int exponent = Convert.ToInt32(Console.ReadLine());
 
 int result = num;
 
-for (int count = 1;count < exponent; count++ )
+for (int i = 1;i < exponent; i++ )
 {
     result = result * num;
 }
