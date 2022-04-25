@@ -12,13 +12,11 @@ int num = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите степень В: ");
 int exponent = Convert.ToInt32(Console.ReadLine());
 
-int count = 1;
 int result = num;
 
-while (count < exponent)
+for (int count = 1;count < exponent; count++ )
 {
     result = result * num;
-    count++;
 }
 
 Console.WriteLine($"{num}, {exponent} -> {result}");
